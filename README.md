@@ -30,11 +30,11 @@ Daten der Freifunk-Knoten werden über die [nodelist.json](https://downloads.bre
 Die Daten über die Freifunk-Gateways stammen zu einem Teil aus der [gatemon-json](https://status.bremen.freifunk.net/data/merged.json) und zum anderen ebenfalls aus der [nodes.json](http://downloads.bremen.freifunk.net/data/nodes.json).
 Der Parser arbeitet noch mit Version 1 bei der nodes.json - mit yanic entsprechenden Output erzeugen mit: 
 <p align="center">
-[[nodes.output.meshviewer]]
-enable = true
-version    = 1
-nodes_path = "/var/www/html/meshviewer/data/nodes_v1.json"
-graph_path = "/var/www/html/meshviewer/data/graph_v1.json"
+[[nodes.output.meshviewer]]<br>
+enable = true<br>
+version    = 1<br>
+nodes_path = "/var/www/html/meshviewer/data/nodes_v1.json"<br>
+graph_path = "/var/www/html/meshviewer/data/graph_v1.json"<br>
 </p>
 
 ## Knotenliste
