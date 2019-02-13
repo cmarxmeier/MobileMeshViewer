@@ -28,6 +28,14 @@ Eine Veröffentlichung im Play Store oder auf den offiziellen Freifunk Bremen Se
 Die von der App angezeigten Statistiken werden über externe JSON-Dateien geladen. 
 Daten der Freifunk-Knoten werden über die [nodelist.json](https://downloads.bremen.freifunk.net/data/nodelist.json) und die [nodes.json](https://downloads.bremen.freifunk.net/data/nodes.json) in die App importiert. 
 Die Daten über die Freifunk-Gateways stammen zu einem Teil aus der [gatemon-json](https://status.bremen.freifunk.net/data/merged.json) und zum anderen ebenfalls aus der [nodes.json](http://downloads.bremen.freifunk.net/data/nodes.json).
+Der Parser arbeitet noch mit Version 1 bei der nodes.json - mit yanic entsprechenden Output erzeugen mit: 
+<p align="center">
+[[nodes.output.meshviewer]]
+enable = true
+version    = 1
+nodes_path = "/var/www/html/meshviewer/data/nodes_v1.json"
+graph_path = "/var/www/html/meshviewer/data/graph_v1.json"
+</p>
 
 ## Knotenliste
 Die Knotenliste ist die Einstiegsseite der App. Im [Knoten-Fragment](https://github.com/He1md4ll/MobileMeshViewer/blob/master/app/src/main/java/freifunk/bremen/de/mobilemeshviewer/node/NodeListFragment.java) werden alle Freifunk-Knoten angezeigt. Über swipes lässt sich die Liste manuell aktualisieren. Sonst findet die Aktualiserung im Hintergrund statt. Über die Lupe kann die Liste nach bestimmten Knoten-Namen durchsucht werden. Sobald ein Knoten in der Listenansicht ausgewählt wird, öffnet sich dessen Detailansicht.
