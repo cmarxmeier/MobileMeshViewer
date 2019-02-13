@@ -21,7 +21,7 @@ Der MobileMeshViewer bietet:
 
 Zurzeit ist die App nur als [.apk im Repository](./app-debug.apk?raw=true) verfügbar. 
 Die App wurde mit SDK-Version 25 compiliert und setzt für die Installation mindestens SDK-Version 14 (Android 4.0) vorraus.
-Eine Veröffentlichung im Play Store oder auf den offiziellen Freifunk Bremen Servern ist angedacht.
+Eine Veröffentlichung im Play Store oder auf den offiziellen Freifunk Bremen Servern ist angedacht. Neuere Studio-Versionen werden die fehlenden MIPS und MIPS64 toolchains anmeckern - mips64el-linux-android-4.9 und mipsel-linux-android-4.9 aus android-ndk-r16b-windows-x86_64.zip(https://developer.android.com/ndk/downloads/) umkopieren in das ndk/toolchain Verzeichnis unterhalb des Android SDK-Folders.
 
 ## API
 
