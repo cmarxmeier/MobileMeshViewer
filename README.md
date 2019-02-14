@@ -36,6 +36,8 @@ version    = 1<br>
 nodes_path = "/var/www/html/meshviewer/data/nodes_v1.json"<br>
 graph_path = "/var/www/html/meshviewer/data/graph_v1.json"<br>
 </p>
+Freifunk Bremen verwendet FastD - für tunneldigger in den Sourcen das fastd-Parsing auskommentieren.
+Die Anzahl der IP-Adressen je Node im nodes.json checken und im Code anpassen.
 
 ## Knotenliste
 Die Knotenliste ist die Einstiegsseite der App. Im [Knoten-Fragment](https://github.com/He1md4ll/MobileMeshViewer/blob/master/app/src/main/java/freifunk/bremen/de/mobilemeshviewer/node/NodeListFragment.java) werden alle Freifunk-Knoten angezeigt. Über swipes lässt sich die Liste manuell aktualisieren. Sonst findet die Aktualiserung im Hintergrund statt. Über die Lupe kann die Liste nach bestimmten Knoten-Namen durchsucht werden. Sobald ein Knoten in der Listenansicht ausgewählt wird, öffnet sich dessen Detailansicht.
