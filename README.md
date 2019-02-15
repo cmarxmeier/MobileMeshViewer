@@ -38,6 +38,7 @@ graph_path = "/var/www/html/meshviewer/data/graph_v1.json"<br>
 </p>
 Freifunk Bremen verwendet FastD - für tunneldigger in den Sourcen das fastd-Parsing auskommentieren.
 Die Anzahl der IP-Adressen je Node im nodes.json checken und im Code anpassen.
+Bei Freifunk Rhein-Sieg e.V. laufen multiple Domains über die Gateways - Die jeweiligen nodes_v1.json werden über merge_json.pl(https://github.com/Freifunk-Rhein-Sieg/Ansible-Freifunk-Gateway/blob/master/mapserver_collector/files/merge-json.pl) zusammengefahren und für das Ergebnis wird mit generate_nodelist.pl(https://github.com/Freifunk-Rhein-Sieg/Ansible-Freifunk-Gateway/blob/master/mapserver_collector/files/generate_nodelist.pl) eine passende nodelist.json generiert.
 
 ## Knotenliste
 Die Knotenliste ist die Einstiegsseite der App. Im [Knoten-Fragment](https://github.com/He1md4ll/MobileMeshViewer/blob/master/app/src/main/java/freifunk/bremen/de/mobilemeshviewer/node/NodeListFragment.java) werden alle Freifunk-Knoten angezeigt. Über swipes lässt sich die Liste manuell aktualisieren. Sonst findet die Aktualiserung im Hintergrund statt. Über die Lupe kann die Liste nach bestimmten Knoten-Namen durchsucht werden. Sobald ein Knoten in der Listenansicht ausgewählt wird, öffnet sich dessen Detailansicht.
