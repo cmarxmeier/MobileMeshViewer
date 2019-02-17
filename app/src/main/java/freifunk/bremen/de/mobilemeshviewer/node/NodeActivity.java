@@ -166,10 +166,12 @@ public class NodeActivity extends AppCompatActivity {
         nodeAutoupdate.setText(nodeDetailConverter.convertAutoUpdate(nodeDetail.getNodeinfo().getSoftware().getAutoupdater()));
         nodeInstallDate.setText(nodeDetailConverter.convertDate(nodeDetail.getFirstseen()));
 
-        if (nodeDetail.getNodeinfo().getOwner() != null) {
-            nodeOwner.setText(nodeDetail.getNodeinfo().getOwner().getContact());
-        }
-
+        // if (nodeDetail.getNodeinfo().getOwner() != null) {
+        //    nodeOwner.setText(nodeDetail.getNodeinfo().getOwner().getContact());
+        //} else {
+        nodeOwner.setText("hidden -> EU-DSGVO");
+        //}
+        
         if (nodeDetail.getFlagsNode().getOnline()) {
             nodeUptime.setText(nodeDetailConverter.convertUptime(nodeDetail.getStatistics().getUptime()));
             nodeLoadavg.setText(getString(R.string.traffic_separator,
