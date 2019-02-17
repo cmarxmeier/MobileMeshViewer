@@ -158,7 +158,7 @@ public class NodeActivity extends AppCompatActivity {
         nodeMac.setText(nodeDetail.getNodeinfo().getNetwork().getMac());
         nodeId.setText(nodeDetail.getNodeinfo().getNodeId());
         nodeFirmware.setText(getString(R.string.separator,
-                nodeDetail.getNodeinfo().getSoftware().getFirmware().getBase(),
+                nodeDetail.getNodeinfo().getSoftware().getFirmware().getRelease(),
                 nodeDetail.getNodeinfo().getSoftware().getFirmware().getBase()));
         nodeAddresses1.setText(nodeDetail.getNodeinfo().getNetwork().getAddresses().get(0));
         nodeAddresses2.setText(nodeDetail.getNodeinfo().getNetwork().getAddresses().get(1));
