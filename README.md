@@ -36,6 +36,8 @@ version    = 1<br>
 nodes_path = "/var/www/html/meshviewer/data/nodes_v1.json"<br>
 graph_path = "/var/www/html/meshviewer/data/graph_v1.json"<br>
 </p>
+Oder mit dem script nodesv2tov1.pl(https://github.com/Freifunk-Rhein-Sieg/Ansible-Freifunk-Gateway/blob/master/mapserver_collector/files/nodesv2tov1.pl) kompatible nodes_v1.json erzeugen.<br><br>
+
 Freifunk Bremen verwendet FastD - für tunneldigger in den Sourcen das fastd-Parsing auskommentieren.
 Die Anzahl der IP-Adressen je Node im nodes.json checken und im Code anpassen.
 Bei Freifunk Rhein-Sieg e.V. laufen multiple Domains über die Gateways - Die jeweiligen nodes_v1.json werden über merge_json.pl(https://github.com/Freifunk-Rhein-Sieg/Ansible-Freifunk-Gateway/blob/master/mapserver_collector/files/merge-json.pl) zusammengefahren und für das Ergebnis wird mit generate_nodelist.pl(https://github.com/Freifunk-Rhein-Sieg/Ansible-Freifunk-Gateway/blob/master/mapserver_collector/files/generate_nodelist.pl) eine passende nodelist.json generiert.
