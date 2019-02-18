@@ -68,7 +68,7 @@ public class NotificationService extends Service {
     @Subscribe(threadMode = ThreadMode.POSTING)
     public void onNodeStatusChanged(NodeStatusChangedEvent event) {
         final Node node = event.getNode();
-        final String notificationTitle = "Staus des Knotens hat sich geändert";
+        final String notificationTitle = "Status des Knotens hat sich geändert";
         final String notificationText = "node.getName() + " ist " + node.getStatus();
         Intent resultIntent = new Intent(this, NodeActivity.class);
         resultIntent.putExtra(NodeActivity.BUNDLE_NODE, node);
